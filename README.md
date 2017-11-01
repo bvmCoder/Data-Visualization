@@ -1,6 +1,3 @@
-# Millennium-Data-Model-Visualizer
-https://jira2.cerner.com/browse/ACADEM-23715
-
 ## Installation Instructions
 
 - After cloning down the initial repository you will need to install MySQL Database from
