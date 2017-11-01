@@ -1,0 +1,57 @@
+<div id="aboutModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h3 class="modal-title">About</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Overview</h4>
+        <p>Millennium Data Model Visualizer (MDMV) displays the metadata and connection types between tables in the
+          connected database. MDMV connects to a single database specified in the configuration files.</p>
+        <hr>
+        <h4>Features</h4>
+        <ul>
+          <li>
+            <h5>Retrieve all tables</h5>
+            <p>
+              Resets the visualization to include all the tables in the database.
+            </p>
+          </li>
+          <li>
+            <h5>Search</h5>
+            <p>
+              Entering a column or table name into the the search bar will result in suggestions
+              being presented after a few characters are typed. These suggestions will be table names of tables that
+              contain the input string or have a column with a name that contains the string.
+            </p>
+            <p>
+              Pressing the search button results in a query being executed so that the table with a name that
+              matches the query string is displayed. All tables connected to that table will be displayed (along with
+              their relationships to the found table). Finally, if a table is joined with the main table it will also be
+              displayed along with the relevant connections.
+            </p>
+          </li>
+          <li>
+            <h5>List tables</h5>
+            <p>
+              Pressing the "List Tables" button displays the database's tables' names in an alphanumerically sorted list.
+            </p>
+          </li>
+          <li>
+            <h5>Refresh from database</h5>
+            <p>
+              Pressing the "Refresh from DB" button clears the server's database cache. Then the visualization and the
+              server's cache are updated with fresh information from the database.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

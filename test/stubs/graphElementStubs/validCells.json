@@ -1,0 +1,21 @@
+[{
+  "id": 0,
+  "columns": ["var: int", "var2: char"],
+  "tableName": "Node 1"
+}, {
+  "id": 1,
+  "columns": ["var: int", "var2: char"],
+  "tableName": "Node 2"
+}, {
+  "id": 2,
+  "columns": ["var: int", "var2: char"],
+  "tableName": "Node 3"
+}, {
+  "id": 3,
+  "columns": ["var: int", "var2: char"],
+  "tableName": "Node 4"
+}, {
+  "id": 4,
+  "columns": ["var: int", "var2: char"],
+  "tableName": "Node 5"
+}]

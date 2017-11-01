@@ -1,0 +1,57 @@
+[{
+    "name": "Doctor",
+    "columns": [{
+      "name": "id",
+      "type": "Integer",
+      "isPK": true,
+      "referenceTable": "",
+      "referenceColumn": ""
+    }]
+  }, {
+    "name": "Patient",
+    "columns": [{
+      "name": "id",
+      "type": "Integer",
+      "isPK": true,
+      "referenceTable": "",
+      "referenceColumn": ""
+    }, {
+      "name": "doctorId",
+      "type": "Integer",
+      "isPK": false,
+      "referenceTable": "Doctor",
+      "referenceColumn": "id"
+    }, {
+      "name": "roomNumber",
+      "type": "Integer",
+      "isPK": false,
+      "referenceTable": "",
+      "referenceColumn": ""
+    }]
+  }, {
+    "name": "Room",
+    "columns": [{
+      "name": "number",
+      "type": "Integer",
+      "isPK": true,
+      "referenceTable": "",
+      "referenceColumn": ""
+    }, {
+      "name": "wardName",
+      "type": "char[50]",
+      "isPK": false,
+      "referenceTable": "Ward",
+      "referenceColumn": "name"
+    }]
+  },
+  {
+    "name": "next_of_kin",
+    "columns": [{
+      "name": "id",
+      "type": "Integer",
+      "isPK": true,
+      "referenceTable": "Patient",
+      "referenceColumn": "id"
+    }]
+  }
+]

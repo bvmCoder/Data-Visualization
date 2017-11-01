@@ -1,0 +1,30 @@
+<div id='top-bar'>
+  <div id='top-bar-inner'>
+    <div class='top-bar-left'>
+      <a href='.'>
+        <strong>Millennium Data Model Visualizer</strong>
+      </a>
+    </div>
+    <div id='nav-links'>
+      <div class='top-bar-left'>
+        <a href='.'>Home</a>
+      </div>
+      <div class='top-bar-left'> | </div>
+      <div class='top-bar-left'>
+        <a data-toggle='modal' data-target='#aboutModal'>About</a>
+      </div>
+      <div class='top-bar-left'> | </div>
+      <div class='top-bar-left'>
+        <a data-toggle='modal' data-target='#helpModal'>Help</a>
+      </div>
+    </div>
+    <div id='top-bar-right' class='dropdown'>
+      <div id='username-toggle' class='dropdown-toggle' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= user %>
+      </div>
+      <div class="dropdown-menu" aria-labelledby='username-toggle'>
+        <a class='dropdown-item' href="\logout">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>

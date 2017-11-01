@@ -1,0 +1,9 @@
+[{
+  "name": "Doctor",
+  "columns": [{
+    "name": "id",
+    "type": "Integer",
+    "isPk": true,
+    "referenceColumn": ""
+  }]
+}]

@@ -1,0 +1,213 @@
+theme-blue = #1795d2
+theme-green = #4caf43
+theme-white = #fff
+img = 'img'
+
+body
+  font 15px "Lucida Grande", Helvetica, Arial, sans-serif
+  margin: 0px
+
+a
+  color #00B7FF
+
+button
+  cursor pointer
+
+#tableListModal .modal-body
+  max-height 500px
+  overflow-y auto
+
+.display-div
+  width 500px
+  height 200px
+  overflow scroll
+  float right
+  border 1px solid black
+
+#visualization-wrapper
+  position relative
+
+  #umlVisualizer
+    height 600px
+    border 1px solid black
+  
+  #visualization-controls
+    position absolute
+    top 0
+    right 0
+
+    .awesomplete
+      width 100%
+      padding 0 0.5em
+
+      input
+        width 100%
+
+    button.settings
+      background-image url(pathjoin('..', img, 'menu.png'))
+      background-repeat no-repeat
+      background-position center
+      background-size contain
+      width 2em
+      height 2em
+      margin 0.5em 0.5em 0 0
+      background-color theme-blue
+
+      &.dropdown-toggle::after
+        content none
+
+    .dropdown-menu
+      width 300px
+      margin-right 0.5em
+
+    ul
+      padding 0
+      list-style-type none
+      margin 0
+
+      li
+        min-height 2em
+        line-height 2em
+        background theme-white
+        -webkit-transition background 0.5s
+        transition background 0.5s
+        padding 0 0.5em
+        cursor pointer
+        user-select none
+
+        &:not(:last-of-type)
+          border-bottom 1px solid darken(theme-white, 25%)
+
+        &:hover
+          background darken(theme-white, 10%)
+
+#content
+  padding 3.33em
+
+#searchBox
+  width: 17em
+
+#top-bar
+  background-color theme-blue
+  border-bottom-color theme-green
+  border-bottom-style solid
+  border-bottom-width 0.33em
+  color theme-white
+  height 2.67em
+  margin 0 auto
+  width 100%
+
+#top-bar-inner
+  height 2em
+  padding 0 3.33em
+  .dropdown-toggle
+    cursor pointer
+  .dropdown-menu
+    left -3.33em
+    .dropdown-item
+      color theme-blue
+    a:hover
+      background-color: #f8f8f8
+
+.top-bar-left
+  float left
+  line-height 2em
+  text-align left
+  a
+    color theme-white
+    text-decoration none
+  a:hover
+    color theme-white
+    text-decoration none
+  img
+    height: 35px
+
+#top-bar-right a
+  color #fff
+
+#top-bar-right
+  float right
+  line-height 2em
+  text-align right
+
+.float-right
+  float right
+
+.float-left
+  float left
+
+#database-info
+  .user-emphasis
+    color theme-blue
+
+  #database-select
+    border none
+    color theme-green
+
+    option:not(:checked)
+      color black
+
+
+
+#nav-links
+  padding-left 17em;
+  div
+    padding-left 1.5em
+  a
+    text-decoration: none;
+    color theme-white;
+    cursor: pointer;
+  a:hover
+    text-decoration: none;
+    color theme-white;
+
+
+.awesomplete
+  display inline-block
+  position relative
+  [hidden]
+    display none
+  .visually-hidden
+    position absolute
+    clip rect(0, 0, 0, 0)
+  & > input
+    display block
+  & > ul
+    position absolute
+    left 0
+    z-index 1
+    min-width 100%
+    box-sizing border-box
+    list-style none
+    padding 0
+    margin 0
+    background theme-white
+    border-radius .3em
+    margin .2em 0 0
+    background hsla(0,0%,100%,.9)
+    background linear-gradient(to bottom right, white, hsla(0,0%,100%,.8))
+    box-shadow .05em .2em .6em rgba(0,0,0,.2)
+    text-shadow none
+    &:empty
+      display none
+    & > li
+      position relative
+      padding .2em .2em
+      cursor pointer
+      &:hover
+        background hsl(200, 40%, 80%)
+        color black
+    & > li[aria-selected="true"]
+      background hsl(205, 40%, 40%)
+      color white
+  mark
+    background hsl(65, 100%, 50%)
+  li
+    &:hover
+      mark
+        background hsl(68, 100%, 41%)
+  li[aria-selected="true"]
+    mark
+      background hsl(86, 100%, 21%)
+      color inherit
+      

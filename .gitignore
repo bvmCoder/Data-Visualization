@@ -1,0 +1,22 @@
+node_modules/
+public/components
+.nyc_output
+.sass-cache
+
+# Webstorm IDE
+.idea/
+
+# VS Code
+.vscode/
+
+# Test Generated Files
+coverage/
+
+# Mutation Test Generated Files
+stryker_report/
+
+# Generated CSS Files
+public/css/style.css
+
+# Generated JS Files
+public/js/

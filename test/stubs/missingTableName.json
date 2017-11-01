@@ -1,0 +1,11 @@
+[{
+  "profession": "doctor",
+  "columns": [{
+    "name": "id",
+    "type": "Number",
+    "isPk": true,
+    "referencesTables": [
+
+    ]
+  }]
+}]

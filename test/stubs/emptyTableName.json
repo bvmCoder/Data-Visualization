@@ -1,0 +1,11 @@
+[{
+  "name": "",
+  "columns": [{
+    "columnName": "id",
+    "columnType": "Number",
+    "isPk": true,
+    "referencesTables": [
+
+    ]
+  }]
+}]

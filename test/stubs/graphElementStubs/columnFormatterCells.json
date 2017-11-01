@@ -1,0 +1,22 @@
+[
+  {
+    "id":0,
+    "columns":["id: Integer PK"],
+    "tableName":"Doctor"
+  },
+  {
+    "id":1,
+    "columns":["id: Integer PK", "doctorId: Integer", "roomNumber: Integer"],
+    "tableName":"Patient"
+  },
+  {
+    "id":2,
+    "columns":["number: Integer PK", "wardName: char[50]"],
+    "tableName":"Room"
+  },
+  {
+    "id":3,
+    "columns":["id: Integer PK"],
+    "tableName": "next_of_kin"
+  }
+]
